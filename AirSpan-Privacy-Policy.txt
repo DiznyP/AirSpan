@@ -1,0 +1,56 @@
+# AirSpan Privacy Policy
+
+Effective date: September 16, 2026
+
+AirSpan is published by AirSpan ("we," "us," or "our"). This policy explains how information is handled when you use the AirSpan Windows application to share your screen and audio with compatible devices.
+
+## Information AirSpan processes
+
+**Screen and audio content.** When you start sharing, AirSpan accesses the screen or window you select and, if enabled and supported, its associated audio. This content is processed to provide live mirroring to your connected receiver. Anything visible or audible in the shared content, including notifications or personal information, may be available to people with access to that receiver. AirSpan does not create saved recordings of your shared screen or audio or upload that content to servers operated by us.
+
+**Device and connection information.** AirSpan processes device names, device identifiers, local network addresses, ports, receiver models, connection status, and technical connection information to discover receivers, establish connections, and maintain mirroring sessions. Connection information is exchanged with participating devices as needed to provide these features.
+
+**Pairing information.** AirSpan processes pairing codes and authentication information when you pair a receiver. Saved receiver details and pairing credentials are stored on your computer so you can reconnect. Saved pairing data is encrypted using Windows-backed secure storage through Electron's safeStorage feature.
+
+**Diagnostic information.** AirSpan writes local diagnostic logs containing timestamps, connection events, errors, device details, and performance information. If you choose Export diagnostics, it creates a ZIP file at a location you select. The export includes application and operating-system versions, connection history, receiver details, and performance statistics. The export process is designed to redact pairing secrets, PINs, cryptographic keys, network identifiers, and user-profile paths. Device names and other contextual information may remain, so review the archive before sharing it. Exporting diagnostics does not automatically send the archive to us.
+
+**Support communications.** If you contact us, we receive the contact details, messages, attachments, and diagnostic files you choose to provide. We use that information to respond, troubleshoot problems, and support the application.
+
+## Network connections and third parties
+
+AirSpan uses your local network to discover and communicate with receivers. Its browser-based mirroring feature also uses a Google-operated STUN service at stun.l.google.com to help establish a direct WebRTC connection. That service can receive your public IP address and connection-related network metadata. It is not used to relay your screen or audio content. Google's handling of information is described in its [Privacy Policy](https://policies.google.com/privacy).
+
+Microsoft independently handles information related to the Microsoft Store, purchases, downloads, updates, and Windows services under the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). Receiver devices, browsers, and operating systems may also process information under their providers' policies.
+
+AirSpan does not require an AirSpan account and does not include advertising or third-party analytics tracking. We do not sell personal information or use shared content for advertising. Information you voluntarily send for support may be processed by our email or support providers to handle your request. We may disclose such information when required by law.
+
+## Storage and retention
+
+Live screen and audio data is processed temporarily for transmission and playback rather than saved as a recording by AirSpan. Saved pairing information remains locally until you forget the receiver or remove the application's stored data. Local diagnostic logs are rotated as they grow; they are not deleted on a fixed daily schedule. Diagnostic archives you export remain wherever you save them until you delete them.
+
+We retain support correspondence only as long as reasonably needed to resolve your request, maintain relevant support records, and satisfy applicable legal obligations. Uninstalling the app may not remove exported archives or every local data file.
+
+## Your choices and rights
+
+You can stop sharing, disable shared audio, disconnect a receiver, and use the Forget control to remove saved receiver pairing information. You decide whether to export diagnostics or share them with anyone. You can delete exported archives and, with AirSpan closed, remove its local logs or application data. Removing application data may require you to pair receivers again.
+
+Depending on your location, you may have rights to access, correct, delete, or obtain a copy of personal information we hold, or to object to or restrict certain uses. Contact us to exercise these rights or ask for help locating local data. We cannot remotely access or delete data stored only on your devices. You may also have the right to complain to your local data-protection authority.
+
+## Security
+
+AirSpan uses safeguards including encrypted storage for saved pairing credentials. No system can guarantee absolute security. Use trusted networks and receivers, protect your computer, and stop sharing before displaying information you do not intend others to see.
+
+## Children's privacy
+
+AirSpan is a general-purpose screen-sharing application and is not directed specifically to children. We do not knowingly solicit personal information from children through support communications. If you believe a child has sent us personal information, contact us so we can review and address it.
+
+## Changes and contact
+
+We may update this policy to reflect changes to AirSpan or our practices. We will publish the revised policy with an updated effective date and provide additional notice where required.
+
+For privacy questions or requests, contact:
+
+Publisher: AirSpan
+
+Email: Heartbr6ke@outlook.com
+

@@ -1,0 +1,98 @@
+{
+  "name": "airspan",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "build:dev": "vite build --mode development",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "node --check electron/main.mjs && node --test electron/*.test.mjs",
+    "desktop:dir": "npm run build && electron-builder --dir --win --x64",
+    "desktop:dist": "npm run build && electron-builder --win --x64",
+    "desktop:portable": "npm run build && electron-builder --win portable --x64"
+  },
+  "dependencies": {
+    "@noble/ciphers": "^2.4.0",
+    "bonjour-service": "^1.4.4",
+    "fast-srp-hap": "^2.0.4",
+    "plist": "^5.0.0"
+  },
+  "devDependencies": {
+    "@tanstack/react-router": "^1.170.0",
+    "@tanstack/router-plugin": "^1.168.0",
+    "@types/node": "^22.16.5",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "electron": "^38.1.0",
+    "electron-builder": "^26.15.3",
+    "lucide-react": "^0.510.0",
+    "qrcode": "^1.5.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "typescript": "^5.7.0",
+    "vite": "^8.2.0"
+  },
+  "build": {
+    "appId": "com.airspan.desktop",
+    "productName": "AirSpan",
+    "files": [
+      "electron/**/*",
+      "!electron/**/*.test.mjs",
+      "web-dist/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "electron/preload.cjs",
+        "to": "preload.cjs"
+      },
+      {
+        "from": "tools/fpsap-helper/fairplay-helper.exe",
+        "to": "fairplay-helper.exe"
+      }
+    ],
+    "win": {
+      "icon": "build/airspan.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "AirSpan",
+      "installerIcon": "build/airspan.ico",
+      "uninstallerIcon": "build/airspan.ico"
+    },
+    "portable": {
+      "artifactName": "AirSpan-${version}-portable.${ext}"
+    },
+    "electronVersion": "38.1.0"
+  },
+  "main": "electron/main.mjs",
+  "version": "1.0.1",
+  "allowScripts": {
+    "electron@38.8.6": true,
+    "electron-winstaller@5.4.0": true
+  }
+}

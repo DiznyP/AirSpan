@@ -1,0 +1,17 @@
+node_modules/
+dist/
+web-dist/
+.package-verify/
+.audit-old/
+*.appx
+*.log
+*.zip
+coverage/
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+airplay-pairings.dat
